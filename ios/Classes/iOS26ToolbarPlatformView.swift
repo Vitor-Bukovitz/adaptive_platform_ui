@@ -199,6 +199,7 @@ class iOS26ToolbarPlatformView: NSObject, FlutterPlatformView {
                         titleLabel.text = title
                         titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
                         titleLabel.textAlignment = .center
+                        titleLabel.translatesAutoresizingMaskIntoConstraints = true
 
                         let titleSize = (title as NSString).size(withAttributes: [.font: UIFont.systemFont(ofSize: 17, weight: .semibold)])
                         titleLabel.frame = CGRect(x: 0, y: 0, width: max(titleSize.width, 200), height: 44)
@@ -227,6 +228,7 @@ class iOS26ToolbarPlatformView: NSObject, FlutterPlatformView {
                         titleLabel.text = title
                         titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
                         titleLabel.textAlignment = .left
+                        titleLabel.translatesAutoresizingMaskIntoConstraints = true
                         titleLabel.sizeToFit()
 
                         let titleItem = UIBarButtonItem(customView: titleLabel)
@@ -256,6 +258,7 @@ class iOS26ToolbarPlatformView: NSObject, FlutterPlatformView {
                     titleLabel.text = title
                     titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
                     titleLabel.textAlignment = .left
+                    titleLabel.translatesAutoresizingMaskIntoConstraints = true
                     titleLabel.sizeToFit()
 
                     let titleItem = UIBarButtonItem(customView: titleLabel)
